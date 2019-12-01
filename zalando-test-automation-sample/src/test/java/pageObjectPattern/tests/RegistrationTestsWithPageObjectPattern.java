@@ -7,9 +7,10 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pageObjectPattern.pages.MainPage;
 import pageObjectPattern.pages.RegistrationPage;
-
 import java.util.concurrent.TimeUnit;
 
 public class RegistrationTestsWithPageObjectPattern {
@@ -43,6 +44,17 @@ public class RegistrationTestsWithPageObjectPattern {
         registrationPage.chooseGender();
         registrationPage.clickRegisterButton();
         mainPage.clickAccountButton();
+        Assert.assertEquals("https://www.zalando.pl/myaccount/", driver.getCurrentUrl());
+    }
+
+    @Test
+    public void login (){
+        mainPage.clickAccountButton();
+        mainPage.inputLoginEmail();
+        mainPage.inputLoginPassword();
+        mainPage.clickLoginButton();
+        WebDriverWait wait = new WebDriverWait(driver, 2);
+        wait.until(ExpectedConditions.urlToBe("https://www.zalando.pl/myaccount/"));
         Assert.assertEquals("https://www.zalando.pl/myaccount/", driver.getCurrentUrl());
     }
 }
