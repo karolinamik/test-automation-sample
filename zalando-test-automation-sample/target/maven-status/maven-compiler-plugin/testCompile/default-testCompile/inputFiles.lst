@@ -1,2 +1,7 @@
 /home/kursant/Pulpit/netguru/test-automation-sample/zalando-test-automation-sample/src/test/java/RegistrationTests.java
+/home/kursant/Pulpit/netguru/test-automation-sample/zalando-test-automation-sample/src/test/java/pageObjectPattern/tests/RegistrationTestsWithPageObjectPattern.java
 /home/kursant/Pulpit/netguru/test-automation-sample/zalando-test-automation-sample/src/test/java/QuickTest.java
+/home/kursant/Pulpit/netguru/test-automation-sample/zalando-test-automation-sample/src/test/java/pageObjectPattern/pages/RegistrationPage.java
+/home/kursant/Pulpit/netguru/test-automation-sample/zalando-test-automation-sample/src/test/java/pageObjectPattern/pages/MainPage.java
+/home/kursant/Pulpit/netguru/test-automation-sample/zalando-test-automation-sample/src/test/java/pageObjectPattern/elements/Button.java
+/home/kursant/Pulpit/netguru/test-automation-sample/zalando-test-automation-sample/src/test/java/pageObjectPattern/elements/TextInput.java
