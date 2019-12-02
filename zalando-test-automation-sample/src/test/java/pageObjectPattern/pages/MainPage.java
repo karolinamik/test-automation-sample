@@ -6,7 +6,7 @@ import pageObjectPattern.elements.Button;
 import pageObjectPattern.elements.TextInput;
 
 public class MainPage {
-WebDriver driver;
+    private WebDriver driver;
     private By accountBy = By.className("z-navicat-header_navToolItemLink-empty");
     private By goToRegistrationPageBy = By.xpath("//div[contains(text(),'Przejdź dalej')]");
     private By loginEmailBy = By.name("login.email");

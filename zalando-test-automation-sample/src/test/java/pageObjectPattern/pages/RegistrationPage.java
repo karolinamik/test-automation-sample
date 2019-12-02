@@ -7,7 +7,7 @@ import pageObjectPattern.elements.Button;
 import pageObjectPattern.elements.TextInput;
 
 public class RegistrationPage {
-    WebDriver driver;
+    private WebDriver driver;
     private By firstNameBy = By.name("register.firstname");
     private By lastNameBy = By.name("register.lastname");
     private By emailBy = By.name("register.email");
